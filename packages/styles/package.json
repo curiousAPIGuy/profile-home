@@ -1,0 +1,13 @@
+{
+  "name": "@creator-profile/styles",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Design tokens and shared styles for Creator Profile",
+  "style": "src/index.css",
+  "exports": {
+    "./tokens.css": "./src/tokens.css",
+    "./reset.css": "./src/reset.css",
+    "./index.css": "./src/index.css",
+    ".": "./src/index.css"
+  }
+}

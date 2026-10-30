@@ -1,0 +1,10 @@
+export { default as Sidebar } from './components/Sidebar';
+export { default as MainContent } from './components/MainContent';
+export { default as OfferingCard } from './components/OfferingCard';
+export { default as OfferingsGrid } from './components/OfferingsGrid';
+export { default as RatingsSection } from './components/RatingsSection';
+export { default as TestimonialCard } from './components/TestimonialCard';
+export { default as SocialLinkCard } from './components/SocialLinkCard';
+export { default as AboutSection } from './components/AboutSection';
+export { useProfile } from './hooks/useProfile';
+export * from './types';

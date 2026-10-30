@@ -1,0 +1,22 @@
+{
+  "name": "creator-profile-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail -n client,server -c cyan,magenta \"npm run dev -w @creator-profile/client\" \"npm run dev -w @creator-profile/server\"",
+    "dev:client": "npm run dev -w @creator-profile/client",
+    "dev:server": "npm run dev -w @creator-profile/server",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "oxlint"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "oxlint": "^1.75.0"
+  }
+}
