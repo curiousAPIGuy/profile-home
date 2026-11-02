@@ -9,7 +9,7 @@ export const profilesDb: Record<string, ProfileData> = {
       username: 'asingh',
       avatarUrl: '/avatar.png',
       verified: true,
-      bio: "I'm a senior backend architect working at the intersection of fintech and cybersecurity. I build software tools, publish deep-dive technical articles, and mentor developers prepping for tough backend interviews.<p> My content focuses on the realities of production engineering — high-concurrency systems, defensive architecture, and JVM internals — so candidates learn how to solve real problems in the room, not just recite interview trivia.",
+      bio: "I'm a senior backend architect working at the intersection of fintech and cybersecurity. I build software tools, publish deep-dive technical articles, and mentor developers prepping for tough backend interviews.My content focuses on the realities of production engineering — high-concurrency systems, defensive architecture, and JVM internals — so candidates learn how to solve real problems in the room, not just recite interview trivia.",
       bookings: 1475,
       badges: [
         //{ id: 'bookings', type: 'stat', label: 'Bookings', value: '1475' },
