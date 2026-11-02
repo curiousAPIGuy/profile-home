@@ -44,9 +44,11 @@ export default function RatingsSection({ ratings }: RatingsSectionProps) {
         </div>
       </div>
 
-      <button type="button" className="show-all-btn">
-        Show all reviews
-      </button>
+      {ratings.reviews.length > 4 && (
+        <button type="button" className="show-all-btn">
+          Show all reviews
+        </button>
+      )}
     </section>
   );
 }
