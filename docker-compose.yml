@@ -7,7 +7,10 @@ services:
       - "3001:3001"
     environment:
       - PORT=3001
-      - NODE_ENV=production
+      - NODE_ENV=development
+      - DATABASE_URL=${DATABASE_URL:-postgresql://${POSTGRES_USER:-ashutoshsingh}@host.docker.internal:5432/${POSTGRES_DB:-creator_profile}}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     healthcheck:
       test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3001/api/profiles/ashutosh"]
       interval: 10s
